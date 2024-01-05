@@ -1,5 +1,5 @@
 export async function doAuth(args: { token: string; url: string }) {
-  const endpoint = `${args.url}/api/bookmarks`;
+  const endpoint = `${args.url}/api/bookmarks/`;
   let url = new URL(endpoint);
   const res = await fetch(url, {
     headers: {
